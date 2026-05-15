@@ -28,7 +28,6 @@ main{
         "bottom-left bottom-center1 bottom-right bottom-right"
         "bottom-left bottom-center2 bottom-right bottom-right"
     ;
-    /* gap: 5px; */
 }
 
 .left-top{
@@ -61,11 +60,8 @@ main{
 
 .center-top1 img{
     border-radius: 50px;
-    /* height: 250px; */
-    /* margin: auto; */
     width: 280px;
     object-fit: cover;
-    /* object-position: 10% 10%; */
 }
 
 .center-top2{
@@ -78,6 +74,7 @@ main{
 
 .center-top2-first{
     height: 70%;
+    width: 100%;
     padding-top: 30px;
     padding-left: 20px;
 }
@@ -86,11 +83,12 @@ main{
     color: white;
     display: flex;
     align-items: center;
-    /* justify-content: center; */
     height: 50px;
+    width: 80%;
     margin-left: 40px;
     font-size: 18px;
     border-radius: 30px;
+    transition: all 0.5s ease;
 }
 
 .center-top2-text:hover{
@@ -134,11 +132,11 @@ main{
 }
 
 .center-top2-second{
-    height: 20%;
+    height: 28%;
+    width: 100%;
     display: flex;
     align-items: center;
     padding-left: 20px;
-
 }
 
 .right-top{
@@ -176,7 +174,6 @@ main{
 }
 
 .right-center{
-    /* background-color: darkcyan; */
     grid-area: right-center;
     margin: 5px 20px;
 }
@@ -184,10 +181,8 @@ main{
 .right-center img{
     width: 100%;
     height: 100%;
-    /* transform: scale(1.3); */
     object-fit: cover;
     border-radius: 30px;
-    /* object-position: top; */
 }
 
 .centeer{
@@ -318,6 +313,11 @@ main{
 
 .bottom-center1 i{
     font-size: 80px;
+    transition: all 0.5s ease;
+    cursor: pointer;
+}
+.bottom-center1 i:hover{
+    color: #B25CFF;
 }
 
 .bottom-center2{
@@ -340,10 +340,16 @@ main{
 }
 
 .bottom-center2 div i{
-  margin-left: 120px;
+    font-size: 20px;
+    margin-left: 120px;
+    cursor: pointer;
+    display: inline-block;
+    transition : all 0.5s ease;
 }
-
-
+.bottom-center2 div:hover i{
+    color: #B25CFF;
+    transform: translate(10px, -5px);
+}
 
 .bottom-right{
     background-color: white;
@@ -351,14 +357,12 @@ main{
     border-radius: 20px;
     margin: 5px 15px;
     display: flex;
-    /* align-items: c; */
     justify-content: space-between;
 }
 
 .bottom-right-left{
     display: flex;
     flex-direction: column;
-    /* align-items: center; */
     justify-content: space-between;
     padding: 20px;
 }
@@ -390,4 +394,11 @@ main{
     margin: 0px 40px;
     background-color: #B25CFF;
     color: white;
+    cursor: pointer;
+    transition: all 0.5s ease;
+}
+
+.bottom-right-right button:hover{
+    background-color: #7c31be;
+    box-shadow: 3px 3px 10px #7c31be;
 }
